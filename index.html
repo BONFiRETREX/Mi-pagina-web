@@ -5,6 +5,7 @@
     <meta charset="UTF-8"> <!--caracteres especiales-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi primera pagina web</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <!-- etiqueta de texto de difetente tamaño 1 mas grande  -->
@@ -106,7 +107,7 @@
       <section class="card" id="Multimedia">
         <h2>Multimedia</h2>
         <figure>
-            <img src="https://m.media-amazon.com/images/I/718yJaK7tBL._AC_UF894,1000_QL80_.jpg" alt="imagen de ejemplo">
+            <img src="https://i.pinimg.com/474x/21/8b/e6/218be66e9aab11214b4ea9000899cf02.jpg" alt="imagen de ejemplo">
         </figure>
         <P> 
             <Button type="button"> Botón
@@ -145,7 +146,90 @@
                 </tr>
             </tbody>
         </table>
+        <!--  -->
+        <section class="card" id="formularios">
+               <h2>5) Formularios</h2>
+             <form action="#" method="post"><!-- # significa vacio, metodo post para enviar datos(post) -->
+              <fieldset>
+                <fieldset>Datos basicos </fieldset>
+                <label ><!-- etiqueta de texto -->
+                Nombre
+                <input type="text" name="nombre" placeholder="Tu nombre" required> <!-- place holder espacio de mensaje dentro del campo  -->
+                
+              </label>
+              <label ><!-- etiqueta de texto -->
+                Email
+                <input type="text" email="nombre" placeholder="Ingresa tu correo" required> <!-- place holder espacio de mensaje dentro del campo  -->
+                
+              </label>
+              <label ><!-- etiqueta de texto -->
+                Password 
+                <input type="password" name="pass" maxlength="7" minlength="6" placeholder="Tu contraseña" required> <!-- place holder espacio de mensaje dentro del campo  -->
+                
+              </label>
+
+              <label>
+                Fecha
+                <input type="date" name="fecha">
+              </label>
+
+              <label>
+                Color
+                <input type="color" name="color">
+              </label>
+              <label>
+                Rango
+                <input type="range" name="rango" min="0" max="100">
+              </label>
+
+              <label>
+                archivos
+                <input type="file" name="archivo">
+              </label>
+
+               <label>
+                      Seleccion   
+                <select name="opcion" >
+                 <option value="">Elige una Opcion </option>
+                 <option >HTML</option>
+                 <option >css</option>
+                 <option >git</option>
+                </select>
+              </label>
+              <!-- taller  -->
+              <label >
+                Comentarios 
+                <textarea name="comentarios" rows="4" placeholder="Escribe algo..."></textarea>  
+              </label>
+              <!-- radios -->
+              <div class="inline">
+                <label >
+                <input type="radio" name="nivel" value="basico">Basico
+              </label>
+              <label >
+                <input type="radio" name="nivel" value="pro">Pro
+              </label>
+
+              </div>
+
+              <div class="inline">
+                <label >
+                  <input type="checkbox" name="ok">Acepto terminos
+                </label>
+              </div>
+              <div class="actions">
+                  <button class="btn" type="submit">Enviar </button>
+                  <button class="btn ghost" type="reset" >Limpiar</button>               
+              </div>
+
+              </fieldset>
+             </form> 
+             
+        </section>
+<!--  -->
+
          </section>
+
 
 </body>
 </html>                     
