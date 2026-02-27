@@ -5,7 +5,7 @@
   --card: #2573a4;
   --text: #e8ecff;
   --muted: #b9c0ff;
-  --border: rgba(255,255,255,.12);
+  --border: rgba(255,255,255,.11); 
   --shadow: 0 10px 30px rgba(0, 0, 0, 0.751);
   --radius: 16px;
 }
