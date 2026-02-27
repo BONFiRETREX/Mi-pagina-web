@@ -1,33 +1,35 @@
-
-    
-    
-    
     /* 1) Variables: colores y medidas base */
 :root{
-  --bg: #0b1020;
-  --card: #121a33;
+  /* root para variavles colores y estilo   */
+  --bg: #24062d;
+  --card: #2573a4;
   --text: #e8ecff;
   --muted: #b9c0ff;
   --border: rgba(255,255,255,.12);
-  --shadow: 0 10px 30px rgba(0,0,0,.35);
+  --shadow: 0 10px 30px rgba(0, 0, 0, 0.751);
   --radius: 16px;
 }
 
 /* 2) Reset suave */
 *{ box-sizing: border-box; }
-html, body{ height: 100%; }
-body{
-  margin: 0;
-  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
-  background: radial-gradient(1200px 600px at 20% 10%, rgba(124,77,255,.25), transparent),
+html, body{ height: 100%; } /* la pantalla se abrira en alto y ancho en 100% sin espacios en blanco   */
+
+body{ /* llama la etiqueta si no tiene nada delante es el nombre directo */
+
+
+  margin: 0; /*  margen */
+  font-family: "Lucida Console", "Courier New", monospace; /* fuente de letra */
+  background: radial-gradient(1200px 600px at 20% 10%, rgba(255, 213, 77, 0.25), transparent), 
+  /* fondo radial gradient graduado por pixeles ancho alto pixeles 20 y 10% */  
               radial-gradient(900px 500px at 90% 0%, rgba(0,200,255,.18), transparent),
-              var(--bg);
+              var(--bg);  /* variable que biene del root */  
+              
   color: var(--text);
   line-height: 1.5;
 }
 
 /* 3) Utilidades */
-.container{
+.container{ /* viene de las clases class="cointarner"  .significa una clase, nombre solo ouna etiqueta */
   width: min(1050px, 92%);
   margin: 0 auto;
 }
@@ -44,7 +46,7 @@ body{
 
 a{ color: inherit; }
 code{
-  background: rgba(255,255,255,.08);
+  background: rgba(198, 9, 9, 0.178);
   padding: 2px 6px;
   border-radius: 8px;
 }
@@ -53,7 +55,7 @@ code{
 .site-header{
   padding: 36px 0 18px;
   border-bottom: 1px solid var(--border);
-}
+} /* barra de navegacion  */
 .subtitle{ color: var(--muted); margin-top: 6px; }
 .nav{
   list-style: none;
@@ -63,23 +65,23 @@ code{
   flex-wrap: wrap;
   gap: 10px;
 }
-.nav a{
+.nav a{ 
   text-decoration: none;
   padding: 8px 12px;
   border: 1px solid var(--border);
   border-radius: 999px;
-  background: rgba(255,255,255,.04);
+  background: rgba(4, 165, 245, 0.868);
 }
-.nav a:hover{
+.nav a:hover{ /* nav se aplica a la etiqueta a (enlaces)  hover para que resalte  id se llama # antes del id   */
   transform: translateY(-1px);
-  background: rgba(255,255,255,.08);
+  background: rgba(159, 21, 159, 0.365);
 }
-
+ 
 /* 5) Cards */
-.card{
+.card{ /* secciones como las de tarjetas */
   margin: 22px 0;
   padding: 18px;
-  background: linear-gradient(180deg, rgba(255,255,255,.05), rgba(255,255,255,.03));
+  background: linear-gradient(180deg, rgba(181, 15, 15, 0.05), rgba(231, 12, 12, 0.03));
   border: 1px solid var(--border);
   border-radius: var(--radius);
   box-shadow: var(--shadow);
@@ -101,7 +103,7 @@ code{
   border: 1px solid transparent;
   padding: 10px 14px;
   border-radius: 12px;
-  background: rgba(124,77,255,.35);
+  background: rgba(10, 182, 162, 0.893);
   text-decoration: none;
   cursor: pointer;
 }
@@ -114,13 +116,13 @@ code{
 /* 7) Imágenes, tablas, forms */
 figure{ margin: 0; }
 img{
-  width: 100%;
+  width: 35%;
   height: auto;
   border-radius: 14px;
   border: 1px solid var(--border);
 }
 table{
-  width: 100%;
+  width: 40%;
   border-collapse: collapse;
   overflow: hidden;
   border-radius: 14px;
@@ -170,8 +172,8 @@ input, select, textarea{
 
 /* 9) SVG */
 svg rect{
-  fill: rgba(255,255,255,.06);
-  stroke: rgba(255,255,255,.25);
+  fill: rgba(25, 225, 15, 0.874);
+  stroke: rgba(237, 107, 7, 0.863);
 }
 svg text{
   fill: var(--text);
