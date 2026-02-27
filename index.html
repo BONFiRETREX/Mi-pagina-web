@@ -31,7 +31,7 @@
      <main id="contenido" class="container">   
       <!-- esto va a css -->
  <section class="card" id="texto">
-      <h2>1) Acerca de Afromar </h2>
+      <h21)> Acerca de Afromar </h2>
 
       <article>
         <h3>Pasto, Nariño</h3>
@@ -52,8 +52,8 @@
          <abbr title="HyperText Markup Language"></abbr> <!-- abbr para subra con puntos .... -->
         </p>
 
-        <blockquote cite="https://developer.mozilla.org/">
-          “ Echale parla ahí ”
+        <blockquote cite="https://developer.mozilla.org/"> 
+          “ Ven y disfruta de nuestros deliciosos platillos”
         </blockquote>
 
         <p>
@@ -79,34 +79,33 @@
      </main>
      <!-- section -->
      <section class="card">
-       <h2>2)Listas📋</h2>
+       <h22)> Menú de comidas📋</h2>
     <div class="grid">
           <div>
-          <h3>Listas no ordenadas</h3>
+          <h3>Mariscos</h3>
           <ul>
-            <li>Pan 🥖</li>
-            <li>café ☕</li>
-            <li>Cena 🍽️ </li>
+            <li>Langosta🦞</li>
+            <li>Camarones encocados🍤</li>
+            <li>Ceviche🍽️ </li>
           </ul>
           </div>
            <!--  -->
           <div>
-            <h3>LISTAS ORDENADAS 📋</h3>
+            <h3>Bebidas🍹</h3>
             <ol>
-                <li>Clonar repo</li>
-                <li>Editar</li>
-                <li>commit</li>
-                <li>push</li>
+                <li>Limonada🍋</li>
+                <li>Limona de coco🥥</li>
+                <li>Piñacolada🍍</li>
+                <li>Cerezada🍒</li>
             </ol>
           </div>
           <!--  -->
           <div>
-            <h3>Listas de definiciones 📋</h3>
+            <h3>Aperitivos🐟</h3>
              <dl>
-                <dt> HTML</dt>
-                <dt>Estructuras</dt>
-                <dt>Estilo</dt>
-                 <dt>Java Script</dt>
+                <dt> Brochetas de camarón🍡</dt>
+                <dt>Tostadas de pescado🍞</dt>
+                <dt>Ensalada de atún🥗</dt>
 
              </dl>
           </div>
@@ -116,9 +115,9 @@
      </section>
      <!-- nueva seccion -->
       <section class="card" id="Multimedia">
-        <h2>Multimedia</h2>
+        <h2>Nuestra Ubicación</h2>
         <figure>
-            <img src="https://i.pinimg.com/474x/21/8b/e6/218be66e9aab11214b4ea9000899cf02.jpg" alt="imagen de ejemplo">
+            <img src="https://developers.google.com/static/maps/images/landing/react-codelab-thumbnail.png?hl=es-419" alt="imagen de ejemplo">
         </figure>
         <P> 
             <Button type="button"> Botón
@@ -128,38 +127,40 @@
       </section>
           
          <section class="card" id="Tablas">
-            <h24)> Tablas</h2>
+            <h24)> Precios</h2>
             <table>
-            <caption> Tabla de ejemplos</caption>
+            <caption> Elige el platillo ideal para ti</caption>
             <thead>
                 <!-- cabecera -->
             <tr>
                 <!-- filas -->
-                 <th scope="col">Comandos</th> <!-- celdas encabezado    -->
-                <th scope="col">¿Que hace?</th>
+                <th scope="col">Plato</th> <!-- celdas encabezado    -->
+                <th scope="col">Detalle</th>
+                <th scope="col">Precio</th>
             </tr>
             </thead>
             <tbody>
                 <tr >
-                     <td> git estatus </td><!-- encabezado de las filas-->
-                     <td> Muestra cambios pendientes </td>
+                     <td> Langosta🦞 </td><!-- encabezado de las filas-->
+                     <td>Servida con un molde de arroz con coco, patacones de plátano verde y una ensalada cítrica que limpia el paladar.</td>
+                      <td>$58.000</td>
                 </tr>
                 <tr><!-- crea otra fila -->
-                   <td>git add .</td>
-                   <td>Agrega cambios al "Staging"</td>
-
+                   <td>Camarones encocados🍤</td>
+                   <td>Servido con arroz blanco, patacones crujientes y una ensalada fresca de la casa."</td>
+                   <td>$47.000</td>
                 </tr>
 
                 <tr>
-                    <td>git push</td>
-                    <td>sube al repo remoto </td>
-                    
+                    <td>Ceviche🍽️</td>
+                    <td>Pescado blanco fresco (Corvina, Lenguado o Mero según temporada) o camarón premium.</td>
+                     <td>$35.000</td>
                 </tr>
             </tbody>
         </table>
         <!--  -->
         <section class="card" id="formularios">
-               <h2>5) Formularios</h2>
+               <h25)> Reserva aquí⬇️ </h2>
              <form action="#" method="post"><!-- # significa vacio, metodo post para enviar datos(post) -->
               <fieldset>
                 <fieldset>Datos basicos </fieldset>
@@ -182,6 +183,11 @@
               <label>
                 Fecha
                 <input type="date" name="fecha">
+              </label>
+
+              <label>
+                Dirección
+                <input type="text" id="direccion" name="direccion" autocomplete="street-address" placeholder="Calle, número, piso...">
               </label>
 
               <label>
